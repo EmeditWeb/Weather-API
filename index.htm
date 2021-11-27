@@ -6,12 +6,48 @@
 	<title>Weather App | EmeditWEB</title>
 	<link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="icons/rain.svg" type="image/x-icon" />
     <!-- Linking BoxIcon for Icon -->
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
   </head>
+  <style>
+    .download-btn-cn{
+      position: fixed;
+      bottom: 40px;
+      left: 40px;
+      z-index: 99999;
+    }
+    .download-btn-cn a{
+      background: none;
+      padding: 13px 22px;
+      font-size: 16px;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 6px;
+      border: 2px solid #fff;
+      font-family: 'Poppins', sans-serif;
+      transition: all 0.3s ease;
+    }
+    .download-btn-cn a:hover{
+        color: #fff;
+        background: #0d0d0e;
+    }
+    @media screen and (max-width: 600px){
+        .download-btn-cn{
+            left: 20px;
+        }
+        .download-btn-cn a{
+            font-size: 13px;
+            padding: 9px 15px;
+        }
+    }
+  </style>
   <body>
+  	<div class="download-btn-cn">
+<a href="https://github.com/EmeditWeb/Weather-API" target="_blank">View Source Code</a>
+</div>
     <div class="wrapper">
-      <header><i class='bx bx-left-arrow-alt'></i>Weather API</header>
+      <header><i class='bx bx-left-arrow-alt'></i>Weather App</header>
       <section class="input-part">
         <p class="info-txt"></p>
         <div class="content">

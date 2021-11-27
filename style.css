@@ -110,7 +110,7 @@ header i{
   transition: 0.3s ease;
 }
 .input-part button:hover{
-  background: #1d9ffc;
+  background: #0d0d0e;
 }
 
 .wrapper .weather-part{

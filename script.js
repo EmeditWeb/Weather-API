@@ -5,7 +5,7 @@ inputField = inputPart.querySelector("input"),
 locationBtn = inputPart.querySelector("button"),
 weatherPart = wrapper.querySelector(".weather-part"),
 wIcon = weatherPart.querySelector("img"),
-arrowBack = wrapper.querySelector("header i");
+arrowBack = wrapper.querySelector("header");
 
 let api;
 
@@ -25,6 +25,7 @@ locationBtn.addEventListener("click", () =>{
 });
 
 function requestApi(city){
+    //Generate your own api key from the open weather page 
     api = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${'67c742dfdc14a695f3640d8379406c68'}`;
     fetchData();
 }
@@ -47,7 +48,7 @@ function fetchData(){
     // getting api response and returning it with parsing into js obj and in another 
     // then function calling weatherDetails function with passing api result as an argument
     fetch(api).then(res => res.json()).then(result => weatherDetails(result)).catch(() =>{
-        infoTxt.innerText = "Something went wrong";
+        infoTxt.innerText = "Something went wrong [Check API Settings]";
         infoTxt.classList.replace("pending", "error");
     });
 }
