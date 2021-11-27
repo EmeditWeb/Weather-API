@@ -1,3 +1,5 @@
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/c73ce50d-c9f5-4021-8903-9c156ba2393a/deploy-status)](https://app.netlify.com/sites/emedit-wapi/deploys)
 # Weather-API
 Detect Weather status using Javascript script and an open weather map API 
 
